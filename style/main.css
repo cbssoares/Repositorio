@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+--font1:'Noto Sans', sans-serif;
+}
+
+body {
+    /* #eecba6; */
+    background-color: rgb(59, 59, 105);
+    font-family: var(--font1);
+    color: white;
+}
+
+hr {
+    color: rgba(0, 0, 0, 0.548);
+    border: 0.5px solid; 
+}
+.cabecalho{
+    margin: 0px 20px;
+}
+
+.principal{
+    margin: 20px 40px;
+}
+
+.titulo, .subtituloMenor, .subtitulo{
+    font-weight: 600;
+    font-style: italic;
+    
+}
+
+.titulo{
+    font-size: 2.7em;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.subtitulo{
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 12px;
+    
+
+}
+
+.subtituloMenor{
+    font-size: 1.3em;
+    margin: 10px 0px;
+    
+}
+
+.icone{
+    font-size: 1.7em;
+    background-image: 
+    linear-gradient(rgb(238, 39, 172),rgb(226, 38, 170), rgb(168, 37, 125) );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtProj{
+    background-image: 
+    linear-gradient(rgb(238, 39, 172),rgb(226, 38, 170), rgb(168, 37, 125) );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.boneco{
+    height: 1.3rem;
+}
+
+.imgProjeto{
+    height: 250px;
+    width: 400px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+@media (min-width: 992px) {
+
+    .imgProjeto{
+        left: auto;
+        transform:none;
+        width: 30vw;
+    }
+    .sectProject{
+        display: flex;
+        justify-content: space-around;
+    }
+    .pProject{
+        width: 30vw;
+    }
+    
+}
