@@ -11,7 +11,8 @@
 /* cores */
 --cor1: rgb(91, 91, 226);
 --vermelho:  rgb(255, 44, 62);
---cinzaGelo: rgb(252, 252, 252)
+--cinzaGelo: rgb(252, 252, 252);
+--amarelo: rgb(243, 192, 8);
 }
 
 body {
@@ -27,6 +28,10 @@ hr {
     margin: 5px -15px;
 }
 
+div{
+    margin: auto;
+}
+
 .principal, .divProjetos {
     padding: 20px;
 }
@@ -35,13 +40,13 @@ hr {
     display: flex;
     height: 85vh;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .titulo, .subtituloMenor, .subtitulo{
     font-weight: 600;
     font-style: italic;
-    
+
 }
 
 .titulo{
@@ -86,16 +91,37 @@ hr {
 
 .divProjetos{
     background-color: var(--cor1);
-    padding: 20px;
+}
+
+
+.subDivProj{
+    padding: 10px;
+    width: fit-content;
+    background-color:var(--amarelo);
+}
+
+.descricaoProjeto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: fit-content;
+    background-color: var(--cinzaGelo);
+    padding: 10px;
+    height: 20rem;
+    box-shadow: black 10px 10px;
+}
+.subtituloProj{
+   background-color:var(--amarelo);
+   width: fit-content;
+   padding: 2px 10px;
 
 }
 
-.subtProj{
-   color: black !important;
-   background-color:var(--cinzaGelo);
-   padding: 10px;
-   width: fit-content;
-   text-decoration: none !important;
+.linkProj{
+    color: black;
+    text-decoration: none;
+
 }
 
 .boneco{
@@ -103,28 +129,22 @@ hr {
 }
 
 .imgProjeto{
-    height: 250px;
-    width: 400px;
-    margin-bottom: 10px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 120px;
+    margin-bottom: 10px
     
 }
 
 @media (min-width: 992px) {
 
     .imgProjeto{
-        left: auto;
-        transform:none;
-        width: 30vw;
+        width: 200px;
     }
     .sectProject{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .pProject{
-        width: 30vw;
+        width: 20vw;
     }
     
 }
